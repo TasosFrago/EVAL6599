@@ -1,5 +1,51 @@
-(kicad_sch (version 20231120) (generator "eeschema") (generator_version "8.0")
-  (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "ab3b6b9f-35a8-4587-9dd4-e6d1eecaa4cd")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 15.24 17.78)
+		(size 96.52 138.43)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5bc5b03a-4e45-430f-bfb9-95ce74345f66")
+		(property "Sheetname" "pfc_pre-regulator"
+			(at 15.24 17.0684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pfc_pre-regulator.kicad_sch"
+			(at 15.24 156.7946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "EVAL6599"
+				(path "/ab3b6b9f-35a8-4587-9dd4-e6d1eecaa4cd"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
