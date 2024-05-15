@@ -1,18 +1,17 @@
 * EVAL6599 Questions
-
 ** Q1
 
 - [ ] What is the difference of the two GNDs in the PFC pre-regulator? (Is it Protected Earth)
 
 #+DOWNLOADED: screenshot @ 2024-05-06 17:01:22
-[[file:Questions/2024-05-06_17-01-22_screenshot.png]]
+[[file:EVAL6599/notes/Questions/2024-05-06_17-01-22_screenshot.png]]
 
 ** Q2
 
 - [ ] What is the jumper symbol?
 
 #+DOWNLOADED: screenshot @ 2024-05-06 17:02:13
-[[file:Questions/2024-05-06_17-02-13_screenshot.png]]
+[[file:EVAL6599/notes/Questions/2024-05-06_17-02-13_screenshot.png]]
 
 ** Q3
 
@@ -26,8 +25,9 @@
 - [ ] What is this capacitor symbol? (C8 330uF/450V ALUMINUM ELCAP USC SERIES 85 DEG SNAP-IN)
 
 #+DOWNLOADED: screenshot @ 2024-05-15 23:19:32
-[[file:Questions/2024-05-15_23-19-32_screenshot.png]]
+[[file:EVAL6599/notes/Questions/2024-05-15_23-19-32_screenshot.png]]
 
 ** Q5
 
 - [ ] There is no available unencrypted SPICE model for the ICs. (l6563, l6599, VIPER12A)
+
