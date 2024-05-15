@@ -1,0 +1,33 @@
+* EVAL6599 Questions
+
+** Q1
+
+- [ ] What is the difference of the two GNDs in the PFC pre-regulator? (Is it Protected Earth)
+
+#+DOWNLOADED: screenshot @ 2024-05-06 17:01:22
+[[file:Questions/2024-05-06_17-01-22_screenshot.png]]
+
+** Q2
+
+- [ ] What is the jumper symbol?
+
+#+DOWNLOADED: screenshot @ 2024-05-06 17:02:13
+[[file:Questions/2024-05-06_17-02-13_screenshot.png]]
+
+** Q3
+
+<2024-05-15>
+- [X] What is the weird capacitor names? (C11 2nF2-Y2, C4 680nF-X2, C8 330uF/450V)
+
+  First the capacitor value 2nF2 translates to 2.2 nF. It's the same with resistors, 2R2. The Y2 and X2 denote Safety Standard.
+
+** Q4
+
+- [ ] What is this capacitor symbol? (C8 330uF/450V ALUMINUM ELCAP USC SERIES 85 DEG SNAP-IN)
+
+#+DOWNLOADED: screenshot @ 2024-05-15 23:19:32
+[[file:Questions/2024-05-15_23-19-32_screenshot.png]]
+
+** Q5
+
+- [ ] There is no available unencrypted SPICE model for the ICs. (l6563, l6599, VIPER12A)
