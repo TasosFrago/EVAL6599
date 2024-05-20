@@ -1,0 +1,57 @@
+#+title: List of compenents needed for the project
+#+author: Tasos Fragkopoulos
+#+options: toc:nil html-postamble:nil
+
+
+* List
+
+#+ATTR_HTML: :rules all :frame border
+| Item | Part        | SPICE | Notes                                                                      |
+|------+-------------+-------+----------------------------------------------------------------------------|
+| D1   | 1n5406      | [X]   | Built-in to Kicad                                                          |
+| D2   | D15XB60     | [ ]   | Weird jappanese site. Leaving for last                                     |
+| D3   | STTH8R06    | [X]   | ./lib/STTH8R06                                                             |
+| D4   | LL4148      | [X]   | Built-in to Kicad                                                          |
+| D5   | LL4148      | [X]   | Built-in to Kicad                                                          |
+| D6   | LL4148      | [X]   | Built-in to Kicad                                                          |
+| D7   | LL4148      | [X]   | Built-in to Kicad                                                          |
+| D8A  | BYT08P-400  | [~]   | Obsolete. Closest BYT08P/600A ./lib/BYT08P-600(STTH4L06)                   |
+| D8B  | BYT08P-400  | [~]   | Obsolete. Closest BYT08P/600A ./lib/BYT08P-600(STTH4L06)                   |
+| D9   | LL4148      | [X]   | Built-in to Kicad                                                          |
+| D10A | STTH1002C   | [X]   | ./lib/STTH1002C                                                            |
+| D10B | STTH1002C   | [X]   | ./lib/STTH1002C                                                            |
+| D11  | LL4148      | [X]   | Built-in to Kicad                                                          |
+| D12  | LL4148      | [X]   | Built-in to Kicad                                                          |
+| D13  | BZV55-C12V  | [ ]   | Unable to find model, need to make by hand.(https://github.com/peteut/spice-models/blob/master/nxp/diodes/diodes.txt) |
+| D14  | PKC-136     | [X]   | ./lib/PCK-136                                                              |
+| D15  | 1n5822      | [X]   | ./lib/1n5822                                                               |
+| D16  | 1n5821      | [X]   | ./lib/1n5821                                                               |
+| D17  | LL4148      | [X]   | Built-in to Kicad                                                          |
+| D18  | BZV55-B10V  | [ ]   | Unable to find model, need to make by hand.(https://github.com/peteut/spice-models/blob/master/nxp/diodes/diodes.txt) |
+| D19  | BZV55-C30V  | [ ]   | Unable to find model, need to make by hand.(https://github.com/peteut/spice-models/blob/master/nxp/diodes/diodes.txt) |
+| D20  | BAV103      | [ ]   | Unable to find model, need to make by hand.                                |
+| D21  | BZV55-B15V  | [ ]   | Unable to find model, need to make by hand.                                |
+| D22  | BZV55-C15V  | [ ]   | Unable to find model, need to make by hand.                                |
+| D23  | BZV55-B15V  | [ ]   | Unable to find model, need to make by hand.                                |
+|      |             |       |                                                                            |
+| F1   | 8A/250V     | [ ]   | Don't know if fuses have spice models                                      |
+|      |             |       |                                                                            |
+| Q1   | STP12NM50FP | [ ]   | No model available                                                         |
+| Q2   | STP12NM50FP | [ ]   | No model available                                                         |
+| Q3   | BC857C      | [X]   | ./lib/BC857C                                                               |
+| Q5   | STP14NK50Z  | [ ]   | No model available                                                         |
+| Q6   | STP14NK50Z  | [ ]   | No model available                                                         |
+| Q7   | BC547C      | [X]   | ./lib/BC547C                                                               |
+| Q8   | BC847C      | [X]   | ./lib/BC847C                                                               |
+| Q9   | BC857C      | [X]   | ./lib/BC857C                                                               |
+| Q10  | BC847C      | [X]   | ./lib/BC847C                                                               |
+| Q11  | BC547C      | [X]   | ./lib/BC547C                                                               |
+|      |             |       |                                                                            |
+| U1   | L6563       | [ ]   | Only encrypted Pspice model                                                |
+| U2   | L6599       | [ ]   | Only encrypted Pspice model                                                |
+| U3   | SFH617A-2   | [X]   | ./lib/SFH617A-2 (Maybe encrypted ltspice model?? Don't know how legal it is to open it and copy it) |
+| U4   | TL431       | [X]   | ./lib/TL431                                                                |
+| U5   | VIPER12A    | [ ]   | Not available                                                              |
+| U6   | SFH617A-2   | [X]   | ./lib/SFH617A-2 (Maybe encrypted ltspice model?? Don't know how legal it is to open it and copy it) |
+| U7   | TL431       | [X]   | ./lib/TL431                                                                |
+| U8   | SFH617A-2   | [X]   | ./lib/SFH617A-2 (Maybe encrypted ltspice model?? Don't know how legal it is to open it and copy it) |

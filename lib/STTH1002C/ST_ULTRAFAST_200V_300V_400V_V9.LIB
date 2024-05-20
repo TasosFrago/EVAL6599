@@ -1,0 +1,2528 @@
+*
+* File     : ultrafast_200v_300v_400v_v9.LIB
+* Revision : 9.0
+* Date     : DEC 2021
+**********************************************************************
+*Please Read Carefully:
+*Information in this document is provided solely in connection with ST products.
+*STMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make :
+*changes, corrections, modifications or improvements, to this document,
+*and the products and services described herein at any time, without notice.
+*All ST products are sold pursuant to ST’s terms and conditions of sale.
+*Purchasers are solely responsible for the choice, selection and use of the ST products, and services described herein,
+*and ST assumes no liability whatsoever relating to the choice, selection or use of the ST products and services described herein.
+*No license, express or implied, by estoppel or otherwise, to any intellectual property rights is granted under this document.
+*If any part of this document refers to any third party products or
+*services it shall not be deemed a license grant by ST for the use of such third party products or
+*services, or any intellectual property contained therein or
+*considered as a warranty covering the use in any manner whatsoever of such third party products or
+*services or any intellectual property contained therein.
+*UNLESS OTHERWISE SET FORTH IN ST’S TERMS AND CONDITIONS OF SALE ST DISCLAIMS ANY EXPRESS OR IMPLIED
+*WARRANTY WITH RESPECT TO THE USE AND/OR SALE OF ST PRODUCTS INCLUDING WITHOUT LIMITATION IMPLIED
+*WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE (AND THEIR EQUIVALENTS UNDER THE LAWS
+*OF ANY JURISDICTION), OR INFRINGEMENT OF ANY PATENT, COPYRIGHT OR OTHER INTELLECTUAL PROPERTY RIGHT.
+*UNLESS EXPRESSLY APPROVED IN WRITING BY AN AUTHORIZED ST REPRESENTATIVE, ST PRODUCTS ARE NOT
+*RECOMMENDED, AUTHORIZED OR WARRANTED FOR USE IN MILITARY, AIR CRAFT, SPACE, LIFE SAVING, OR LIFE SUSTAINING
+*APPLICATIONS, NOR IN PRODUCTS OR SYSTEMS WHERE FAILURE OR MALFUNCTION MAY RESULT IN PERSONAL INJURY,
+*DEATH, OR SEVERE PROPERTY OR ENVIRONMENTAL DAMAGE. ST PRODUCTS WHICH ARE NOT SPECIFIED AS "AUTOMOTIVE
+*GRADE" MAY ONLY BE USED IN AUTOMOTIVE APPLICATIONS AT USER’S OWN RISK.
+*Resale of ST products with provisions different from the statements and/or technical features
+*set forth in this document shall immediately void any warranty granted by ST for the ST product or
+*service described herein and shall not create or extend in any manner whatsoever, any liability of ST.
+*ST and the ST logo are trademarks or registered trademarks of ST in various countries.
+*Information in this document supersedes and replaces all information previously supplied.
+*The ST logo is a registered trademark of STMicroelectronics.
+*All other names are the property of their respective owners.
+*
+*© 2006 STMicroelectronics - All rights reserved
+*
+*STMicroelectronics group of companies
+*Australia - Belgium - Brazil - Canada - China - Czech Republic - Finland - France
+*Germany - Hong Kong - India - Israel - Italy - Japan - Malaysia - Malta - Morocco
+*Singapore - Spain - Sweden - Switzerland - United Kingdom - United States of America
+*www.st.com
+*
+*******************************************************************
+* FAST RECOVERY RECTIFIER DIODE 200V               L60
+*******************************************************************
+* FAST RECOVERY RECTIFIER DIODE 300V               L1172
+*******************************************************************
+* FAST RECOVERY RECTIFIER DIODE 400V               L1688
+*******************************************************************
+
+
+
+
+
+
+
+*******************************************************************
+* FAST RECOVERY RECTIFIER DIODE 200V
+*******************************************************************
+*******************************************************************
+* Model name       : STTH102
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-41
+*******************************************************************
+*$
+.MODEL STTH102 D
++ IS=6.4632E-9 N=1.5003 RS=25.315E-3 IKF=91.606E-3 CJO=18.018E-12 M=.1532
++  VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=10.00E-9
+*$
+*******************************************************************
+* Model name       : STTH102RL
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-41  in tape&reel
+*******************************************************************
+.MODEL STTH102RL D
++ IS=6.4632E-9 N=1.5003 RS=25.315E-3 IKF=91.606E-3 CJO=18.018E-12 M=.1532
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=10.00E-9
+*$
+*******************************************************************
+* Model name       : STTH102A
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : SMA
+*******************************************************************
+.MODEL STTH102A D
++ IS=6.4632E-9 N=1.5003 RS=25.315E-3 IKF=91.606E-3 CJO=18.018E-12 M=.1532
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=10.00E-9
+*$
+*******************************************************************
+* Model name       : STTH1R02
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-41
+*******************************************************************
+.MODEL STTH1R02 D
++ IS=4.0264E-9 N=1.4621 RS=22.373E-3 IKF=66.666E-3 CJO=22.625E-12 M=.20225
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=.5 TT=12.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH1R02A
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : SMA
+*******************************************************************
+.MODEL STTH1R02A D
++ IS=4.0264E-9 N=1.4621 RS=22.373E-3 IKF=66.666E-3 CJO=22.625E-12 M=.20225
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=.5 TT=12.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH1R02RL
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-41  in tape&reel
+*******************************************************************
+.MODEL STTH1R02RL D
++ IS=4.0264E-9 N=1.4621 RS=22.373E-3 IKF=66.666E-3 CJO=22.625E-12 M=.20225
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=.5 TT=12.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH2R02Q
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-15
+*******************************************************************
+.MODEL STTH2R02Q D
++ IS=980.51E-12 N=1.3511 RS=16.685E-3 IKF=82.336E-3 CJO=27.628E-12 M=.18496
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=10.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH2R02Q-RL
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-15 Tape&Reel
+*******************************************************************
+.MODEL STTH2R02Q-RL D
++ IS=980.51E-12 N=1.3511 RS=16.685E-3 IKF=82.336E-3 CJO=27.628E-12 M=.18496
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=10.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH2R02A
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : SMA
+*******************************************************************
+.MODEL STTH2R02A D
++ IS=980.51E-12 N=1.3511 RS=16.685E-3 IKF=82.336E-3 CJO=27.628E-12 M=.18496
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=10.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH2R02U
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : SMB
+*******************************************************************
+.MODEL STTH2R02U D
++ IS=980.51E-12 N=1.3511 RS=16.685E-3 IKF=82.336E-3 CJO=27.628E-12 M=.18496
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=10.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH3R02
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-201AD
+*******************************************************************
+.MODEL STTH3R02 D
++ IS=17.675E-9 N=1.4353 RS=15.753E-3 IKF=72.791E-3 CJO=30.027E-12 M=.16367
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=8.5000E-9
+*$
+*******************************************************************
+* Model name       : STTH3R02RL
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-201AD Tape&Reel
+*******************************************************************
+.MODEL STTH3R02RL D
++ IS=17.675E-9 N=1.4353 RS=15.753E-3 IKF=72.791E-3 CJO=30.027E-12 M=.16367
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=8.5000E-9
+*$
+*******************************************************************
+* Model name       : STTH3R02Q
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-15
+*******************************************************************
+.MODEL STTH3R02Q D
++ IS=17.675E-9 N=1.4353 RS=15.753E-3 IKF=72.791E-3 CJO=30.027E-12 M=.16367
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=8.5000E-9
+*$
+*******************************************************************
+* Model name       : STTH3R02QRL
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-15 Tape&Reel
+*******************************************************************
+.MODEL STTH3R02QRL D
++ IS=17.675E-9 N=1.4353 RS=15.753E-3 IKF=72.791E-3 CJO=30.027E-12 M=.16367
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=8.5000E-9
+*$
+*******************************************************************
+* Model name       : STTH3R02S
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : SMC
+*******************************************************************
+.MODEL STTH3R02S D
++ IS=17.675E-9 N=1.4353 RS=15.753E-3 IKF=72.791E-3 CJO=30.027E-12 M=.16367
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=8.5000E-9
+*$
+*******************************************************************
+* Model name       : STTH4R02
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-201AD
+*******************************************************************
+.MODEL STTH4R02 D
++ IS=13.686E-9 N=1.4734 RS=18.029E-3 IKF=.10901 CJO=36.721E-12 M=.19592
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=13.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH4R02RL
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-201AD  Tape&Reel
+*******************************************************************
+.MODEL STTH4R02RL D
++ IS=13.686E-9 N=1.4734 RS=18.029E-3 IKF=.10901 CJO=36.721E-12 M=.19592
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=13.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH4R02B
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DPAK
+*******************************************************************
+.MODEL STTH4R02B D
++ IS=13.686E-9 N=1.4734 RS=18.029E-3 IKF=.10901 CJO=36.721E-12 M=.19592
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=13.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH4R02B-TR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DPAK     Tape&Reel
+*******************************************************************
+.MODEL STTH4R02B-TR D
++ IS=13.686E-9 N=1.4734 RS=18.029E-3 IKF=.10901 CJO=36.721E-12 M=.19592
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=13.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH4R02D
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AC
+*******************************************************************
+.MODEL STTH4R02D D
++ IS=13.686E-9 N=1.4734 RS=18.029E-3 IKF=.10901 CJO=36.721E-12 M=.19592
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=13.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH4R02FP
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAC
+*******************************************************************
+.MODEL STTH4R02FP D
++ IS=13.686E-9 N=1.4734 RS=18.029E-3 IKF=.10901 CJO=36.721E-12 M=.19592
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=13.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH4R02U
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : SMB
+*******************************************************************
+.MODEL STTH4R02U D
++ IS=13.686E-9 N=1.4734 RS=18.029E-3 IKF=.10901 CJO=36.721E-12 M=.19592
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=13.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH4R02S
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : SMC
+*******************************************************************
+.MODEL STTH4R02S D
++ IS=13.686E-9 N=1.4734 RS=18.029E-3 IKF=.10901 CJO=36.721E-12 M=.19592
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=13.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH602CT
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AB
+*******************************************************************
+*model STTH602CT  anode1
+*				  | cathode
+*				  | | anode2
+*				  | | |
+.subckt STTH602CT 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=9.9003E-9 N=1.6249 RS=17.581E-3 IKF=.18041 CJO=27.405E-12 M=.18152
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=11.0000E-9)
+*	STMicroelectronics	case=TO-220AB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH602CFP
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAB
+*******************************************************************
+*model STTH602CFP  anode1
+*				   | cathode
+*				   | | anode2
+*				   | | |
+.subckt STTH602CFP 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=9.9003E-9 N=1.6249 RS=17.581E-3 IKF=.18041 CJO=27.405E-12 M=.18152
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=11.0000E-9)
+*	STMicroelectronics	case=TO-220FPAB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH602CSF
+* Description      : Automotive 200 V, dual 3 A ultrafast rectifier
+* Package type     : PSMC
+*******************************************************************
+*model STTH602CSF   anode1
+*			        | cathode
+*				    | | anode2
+*			        | | |
+.subckt STTH602CSF  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=1.5537E-9 N=1.3605 RS=15.152E-3 IKF=84.972E-3 CJO=35.190E-12 M=.25326
++ VJ=.3905 ISR=2.5623E-9 TT=35.0000E-9 XTI=3 EG=1.11 FC=0.5)
+
+*	STMicroelectronics	case=DPACK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH802B
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DPAK
+*******************************************************************
+.MODEL STTH802B D
++ IS=35.497E-9 N=1.6110 RS=9.5290E-3 IKF=.60254 CJO=74.665E-12 M=.1875
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=14.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH802B-TR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DPAK     Tape&Reel
+*******************************************************************
+.MODEL STTH802B-TR D
++ IS=35.497E-9 N=1.6110 RS=9.5290E-3 IKF=.60254 CJO=74.665E-12 M=.1875
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=14.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH802D
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AC
+*******************************************************************
+.MODEL STTH802D D
++ IS=35.497E-9 N=1.6110 RS=9.5290E-3 IKF=.60254 CJO=74.665E-12 M=.1875
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=14.0000E-6
+*$
+*******************************************************************
+* Model name       : STTH802G
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK
+*******************************************************************
+.MODEL STTH802G D
++ IS=35.497E-9 N=1.6110 RS=9.5290E-3 IKF=.60254 CJO=74.665E-12 M=.1875
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=14.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH802FP
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAC
+*******************************************************************
+.MODEL STTH802FP D
++ IS=35.497E-9 N=1.6110 RS=9.5290E-3 IKF=.60254 CJO=74.665E-12 M=.1875
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=14.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH802CT
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AB
+*******************************************************************
+*model STTH802CT  anode1
+*				  | cathode
+*				  | | anode2
+*				  | | |
+.subckt STTH802CT 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=5.3580E-9 N=1.4519 RS=13.121E-3 IKF=.19236 CJO=51.528E-12 M=.21627
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=10.1000E-9)
+*	STMicroelectronics	case=TO-220AB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH802CB
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DPAK
+*******************************************************************
+*model STTH802CB  anode1
+*				  | cathode
+*				  | | anode2
+*				  | | |
+.subckt STTH802CB 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=5.3580E-9 N=1.4519 RS=13.121E-3 IKF=.19236 CJO=51.528E-12 M=.21627
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=10.1000E-9)
+*	STMicroelectronics	case=DPAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH802CFP
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAB
+*******************************************************************
+*model STTH802CFP  anode1
+*				   | cathode
+*				   | | anode2
+*				   | | |
+.subckt STTH802CFP 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=5.3580E-9 N=1.4519 RS=13.121E-3 IKF=.19236 CJO=51.528E-12 M=.21627
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=10.1000E-9)
+*	STMicroelectronics	case=TO-220FPAB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH802CB-TR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DPAK   in tape&reel
+*******************************************************************
+*model STTH802CB-TR  anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH802CB-TR 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=5.3580E-9 N=1.4519 RS=13.121E-3 IKF=.19236 CJO=51.528E-12 M=.21627
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=10.1000E-9)
+*	STMicroelectronics	case=DPAK     Delivery = Tape&reel
+.ends
+*$
+
+*******************************************************************
+* Model name       : STTH802SF
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAC
+*******************************************************************
+.MODEL STTH802SF D
++ IS=63.919E-9 N=1.6362 RS=5.2990E-3 IKF=.70137 CJO=64.839E-12 M=.15726
++ VJ=.3905 ISR=10.010E-21 TT=0 EG=1.11 FC=0.5 XTI=3 
+*$
+
+*******************************************************************
+* Model name       : STTH1002CT
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AB
+*******************************************************************
+*model STTH1002CT  anode1
+*				   | cathode
+*				   | | anode2
+*				   | | |
+.subckt STTH1002CT 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=1.7962E-9 N=1.3742 RS=14.181E-3 IKF=.18602 CJO=44.508E-12 M=.22808
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=15.1E-9)
+*	STMicroelectronics	case=TO-220AB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1002CR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : I²PAK
+*******************************************************************
+*model STTH1002CR  anode1
+*				   | cathode
+*				   | | anode2
+*				   | | |
+.subckt STTH1002CR 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=1.7962E-9 N=1.3742 RS=14.181E-3 IKF=.18602 CJO=44.508E-12 M=.22808
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=15.1E-9)
+*	STMicroelectronics	case=I²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1002CFP
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAB
+*******************************************************************
+*model STTH1002CFP  anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH1002CFP 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=1.7962E-9 N=1.3742 RS=14.181E-3 IKF=.18602 CJO=44.508E-12 M=.22808
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=15.1E-9)
+*	STMicroelectronics	case=TO-220FPAB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1002CG
+* Description      : High Efficiency Ultrafast Diode
+* Package type     :D²PAK
+*******************************************************************
+*model STTH1002CG  anode1
+*				   | cathode
+*				   | | anode2
+*				   | | |
+.subckt STTH1002CG 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=1.7962E-9 N=1.3742 RS=14.181E-3 IKF=.18602 CJO=44.508E-12 M=.22808
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=15.1E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1002CB
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DPAK
+*******************************************************************
+*model STTH1002CB  anode1
+*				   | cathode
+*				   | | anode2
+*				   | | |
+.subckt STTH1002CB 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=1.7962E-9 N=1.3742 RS=14.181E-3 IKF=.18602 CJO=44.508E-12 M=.22808
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=15.1E-9)
+*	STMicroelectronics	case=DPAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1002CSF
+* Description      : Automotive 200 V, dual 3 A ultrafast rectifier
+* Package type     : PSMC
+*******************************************************************
+*model STTH1002CSF   anode1
+*			         | cathode
+*				     | | anode2
+*			         | | |
+.subckt STTH1002CSF  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=789.47E-12 N=1.2543 RS=10.320E-3 IKF=87.639E-3 CJO=49.776E-12 M=.22301
++ VJ=.3905 ISR=12.236E-9 XTI=3 EG=1.11 FC=0.5 TT=25.0000E-9)
+
+*	STMicroelectronics	case=DPACK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1202D
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AC
+*******************************************************************
+.MODEL STTH1202D D
++ IS=31.031E-9 N=1.5347 RS=6.4696E-3 IKF=.37104 CJO=85.728E-12 M=.18434
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=15.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH1202DI
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220ACins
+*******************************************************************
+.MODEL STTH1202DI D
++ IS=31.031E-9 N=1.5347 RS=6.4696E-3 IKF=.37104 CJO=85.728E-12 M=.18434
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=15.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH1202FP
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAC
+*******************************************************************
+.MODEL STTH1202FP D
++ IS=31.031E-9 N=1.5347 RS=6.4696E-3 IKF=.37104 CJO=85.728E-12 M=.18434
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=15.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH1302CT
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AB
+*******************************************************************
+*model STTH1302CT  anode1
+*				   | cathode
+*				   | | anode2
+*				   | | |
+.subckt STTH1302CT 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=8.2004E-9 N=1.4355 RS=8.7680E-3 IKF=.25874 CJO=69.133E-12 M=.2326
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=8.500E-9)
+*	STMicroelectronics	case=TO-220AB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1302CG
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK
+*******************************************************************
+*model STTH1302CG  anode1
+*				   | cathode
+*				   | | anode2
+*				   | | |
+.subckt STTH1302CG 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=8.2004E-9 N=1.4355 RS=8.7680E-3 IKF=.25874 CJO=69.133E-12 M=.2326
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=8.500E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1302CG-TR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK  in tape&reel
+*******************************************************************
+*model STTH1302CG-TR  anode1
+*				      | cathode
+*				      | | anode2
+*				      | | |
+.subckt STTH1302CG-TR 1 4 3
+d1 1 4 dx
+d2 3 4 dx
+.model dx	D(IS=8.2004E-9 N=1.4355 RS=8.7680E-3 IKF=.25874 CJO=69.133E-12 M=.2326
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=8.500E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tape&reel
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1302CFP
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAB
+*******************************************************************
+*model STTH1302CFP  anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH1302CFP 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=8.2004E-9 N=1.4355 RS=8.7680E-3 IKF=.25874 CJO=69.133E-12 M=.2326
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=8.500E-9)
+*	STMicroelectronics	case=TO-220FPAB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1502D
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AC
+*******************************************************************
+.MODEL STTH1502D D
++ IS=17.187E-9 N=1.4112 RS=6.2630E-3 IKF=.3097 CJO=112.58E-12 M=.17157
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=12.5000E-9
+*$
+*******************************************************************
+* Model name       : STTH1502DI
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220ACins
+*******************************************************************
+.MODEL STTH1502DI D
++ IS=17.187E-9 N=1.4112 RS=6.2630E-3 IKF=.3097 CJO=112.58E-12 M=.17157
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=12.5000E-9
+*$
+*******************************************************************
+* Model name       : STTH1502FP
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAC
+*******************************************************************
+.MODEL STTH1502FP D
++ IS=17.187E-9 N=1.4112 RS=6.2630E-3 IKF=.3097 CJO=112.58E-12 M=.17157
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=12.5000E-9
+*$
+*******************************************************************
+* Model name       : STTH1602CT
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AB
+*******************************************************************
+*model STTH1602CT  anode1
+*				   | cathode
+*				   | | anode2
+*				   | | |
+.subckt STTH1602CT 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=1.4554E-9 N=1.3180 RS=8.0293E-3 IKF=.21409 CJO=69.334E-12 M=.2305
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=17.100E-9)
+*	STMicroelectronics	case=TO-220AB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1602CR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : I²PAK
+*******************************************************************
+*model STTH1602CR  anode1
+*				   | cathode
+*				   | | anode2
+*				   | | |
+.subckt STTH1602CR 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=1.4554E-9 N=1.3180 RS=8.0293E-3 IKF=.21409 CJO=69.334E-12 M=.2305
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=17.100E-9)
+*	STMicroelectronics	case=I²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1602CFP
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAB
+*******************************************************************
+*model STTH1602CFP  anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH1602CFP 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=1.4554E-9 N=1.3180 RS=8.0293E-3 IKF=.21409 CJO=69.334E-12 M=.2305
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=17.100E-9)
+*	STMicroelectronics	case=TO-220FPAB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH1602CG
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK
+*******************************************************************
+*model STTH1602CG  anode1
+*				   | cathode
+*				   | | anode2
+*				   | | |
+.subckt STTH1602CG 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=1.4554E-9 N=1.3180 RS=8.0293E-3 IKF=.21409 CJO=69.334E-12 M=.2305
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=17.100E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH2002CT
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AB
+*******************************************************************
+*model STTH2002CT   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH2002CT  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=42.982E-9 N=1.5085 RS=8.0925E-3 IKF=.17348 CJO=87.597E-12 M=.18278
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=14.0000E-9)
+*	STMicroelectronics	case=TO-220AB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH2002CR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : I²PAK
+*******************************************************************
+*model STTH2002CR   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH2002CR  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=42.982E-9 N=1.5085 RS=8.0925E-3 IKF=.17348 CJO=87.597E-12 M=.18278
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=14.0000E-9)
+*	STMicroelectronics	case=I²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH2002CG-TR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK  in tape&reel
+*******************************************************************
+*model STTH2002CG-TR   anode1
+*				       | cathode
+*				       | | anode2
+*				       | | |
+.subckt STTH2002CG-TR  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=42.982E-9 N=1.5085 RS=8.0925E-3 IKF=.17348 CJO=87.597E-12 M=.18278
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=14.0000E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tape & Reel
+.ends
+*$
+*******************************************************************
+* Model name       : STTH2002CG
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK
+*******************************************************************
+*model STTH2002CG   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH2002CG  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=42.982E-9 N=1.5085 RS=8.0925E-3 IKF=.17348 CJO=87.597E-12 M=.18278
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=14.0000E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH2002CFP
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAB
+*******************************************************************
+*model STTH2002CFP   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH2002CFP  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=42.982E-9 N=1.5085 RS=8.0925E-3 IKF=.17348 CJO=87.597E-12 M=.18278
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=14.0000E-9)
+*	STMicroelectronics	case=TO-220FPAB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH2002D
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AC
+*******************************************************************
+.MODEL STTH2002D D
++ IS=5.4078E-9 N=1.3373 RS=5.1633E-3 IKF=.3814 CJO=152.28E-12 M=.24495
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=22.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH2002DI
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AC-INSULATED
+*******************************************************************
+.MODEL STTH2002DI D
++ IS=5.4078E-9 N=1.3373 RS=5.1633E-3 IKF=.3814 CJO=152.28E-12 M=.24495
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=22.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH2002G
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK
+*******************************************************************
+.MODEL STTH2002G D
++ IS=5.4078E-9 N=1.3373 RS=5.1633E-3 IKF=.3814 CJO=152.28E-12 M=.24495
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=22.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH2002G-TR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK in Tape&Reel
+*******************************************************************
+.MODEL STTH2002G-TR D
++ IS=5.4078E-9 N=1.3373 RS=5.1633E-3 IKF=.3814 CJO=152.28E-12 M=.24495
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=22.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH20V02DJF-TR
+* Description      : Turbo2 Ultrafast High Voltage Rectifier
+* Package type     : POWER FLAT 5*6
+*******************************************************************
+.MODEL STTH20V02DJF-TR D
+*+ IS=4.4326E-9 N=1.2330 RS=12.376E-3 IKF=53.195E-3 CJO=283.75E-12 M=.34828
++ IS=17.008E-9 N=1.3782 RS=8.1721E-3 IKF=.10566 CJO=283.75E-12 M=.34828
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=9.000E-9 XTI=3 EG=1.11
+*$
+*******************************************************************
+* Model name       : STTH20W02CW
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-247
+*******************************************************************
+*model STTH20W02CW   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH20W02CW  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=7.1522E-9 N=1.5059 RS=12.679E-3 IKF=.16521 CJO=47.618E-12 M=.29533
++			  VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=19.0000E-9 XTI=3 EG=1.11)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH3002G
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK
+*******************************************************************
+.MODEL STTH3002G D
++ IS=12.397E-9 N=1.3187 RS=3.7635E-3 IKF=.4115 CJO=292.82E-12 M=.17438
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=18.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH3002G-TR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK  in Tape&Reel
+*******************************************************************
+.MODEL STTH3002G-TR D
++ IS=12.397E-9 N=1.3187 RS=3.7635E-3 IKF=.4115 CJO=292.82E-12 M=.17438
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=18.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH3002W
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-247
+*******************************************************************
+.MODEL STTH3002W D
++ IS=12.397E-9 N=1.3187 RS=3.7635E-3 IKF=.4115 CJO=292.82E-12 M=.17438
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=18.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH3002PI
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DOP3 INSULATED
+*******************************************************************
+.MODEL STTH3002PI D
++ IS=12.397E-9 N=1.3187 RS=3.7635E-3 IKF=.4115 CJO=292.82E-12 M=.17438
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=18.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH3002CT
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AB
+*******************************************************************
+*model STTH3002CT   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH3002CT  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=11.052E-9 N=1.3397 RS=3.6423E-3 IKF=.38573 CJO=193.47E-12 M=.20308
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=16.0000E-9)
+*	STMicroelectronics	case=TO-220AB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH3002CR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : I²PAK
+*******************************************************************
+*model STTH3002CR   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH3002CR  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=11.052E-9 N=1.3397 RS=3.6423E-3 IKF=.38573 CJO=193.47E-12 M=.20308
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=16.0000E-9)
+*	STMicroelectronics	case=I²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH3002CG
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK
+*******************************************************************
+*model STTH3002CG   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH3002CG  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=11.052E-9 N=1.3397 RS=3.6423E-3 IKF=.38573 CJO=193.47E-12 M=.20308
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=16.0000E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH3002CG-TR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK   in tape&reel
+*******************************************************************
+*model STTH3002CG-TR  anode1
+*				      | cathode
+*				      | | anode2
+*				      | | |
+.subckt STTH3002CG-TR 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=11.052E-9 N=1.3397 RS=3.6423E-3 IKF=.38573 CJO=193.47E-12 M=.20308
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=16.0000E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tape & Reel
+.ends
+*$
+*******************************************************************
+* Model name       : STTH3002CPI
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TOP3INSULATED
+*******************************************************************
+*model STTH3002CPI   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH3002CPI  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=11.052E-9 N=1.3397 RS=3.6423E-3 IKF=.38573 CJO=193.47E-12 M=.20308
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=16.0000E-9)
+*	STMicroelectronics	case=TOP3I     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH3002CW
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-247
+*******************************************************************
+*model STTH3002CW   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH3002CW  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=11.052E-9 N=1.3397 RS=3.6423E-3 IKF=.38573 CJO=193.47E-12 M=.20308
++			 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=16.0000E-9)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH30W02CW
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-247
+*******************************************************************
+*model STTH30W02CW   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH30W02CW  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=1.4912E-9 N=1.2773 RS=7.2913E-3 IKF=.17447 CJO=63.193E-12 M=.13892
++			  VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=16.5000E-9 XTI=3 EG=1.11)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH30R02DJF
+* Description      : Ultrafast recovery diode high efficiency
+* Package type     : PowerFLAT 5x6
+*******************************************************************
+*model STTH30R02DJF     anode1
+*					    | anode2
+*					    | | anode3
+*				        | | | anode4
+*					    | | | | cathode
+*				        | | | | | 
+.subckt STTH30R02DJF    1 2 3 4 5
+d1 12 5 dx
+r1 1 12 0.1E-3
+r2 2 12 0.1E-3
+r3 3 12 0.1E-3
+r4 4 12 0.1E-3
+.model dx	D(IS=3.2049E-9 N=1.2007 RS=2.9324E-3 IKF=.162 CJO=242.83E-12 M=.22488
++ VJ=.3905 ISR=100.00E-12 TT=5.0000E-9) 
+*	STMicroelectronics	case=PowerFLAT 5x6   Delivery= Tape&reel
+.ends
+*$
+*******************************************************************
+* Model name       : STTH6002CW
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-247
+*******************************************************************
+*model STTH6002CW   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH6002CW  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=463.63E-12 N=1.2873 RS=2.7310E-3 IKF=.5433 CJO=380.44E-12 M=.21716
++			 VJ=.3905 ISR=3.3406E-9 NR=2.3132 FC=0.5 TT=25.0000E-9)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH6002CPI
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TOP3 INSULATED
+*******************************************************************
+*model STTH6002CPI   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH6002CPI  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=463.63E-12 N=1.2873 RS=2.7310E-3 IKF=.5433 CJO=380.44E-12 M=.21716
++			 VJ=.3905 ISR=3.3406E-9 NR=2.3132 FC=0.5 TT=25.0000E-9)
+*	STMicroelectronics	case=TOP3 INSULATED     Delivery = Tube
+.ends                     
+*$
+*******************************************************************
+* Model name       : STTH60W02CW
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-247
+*******************************************************************
+*model STTH60W02CW   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH60W02CW  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=1.4118E-9 N=1.1870 RS=4.1084E-3 IKF=.16531 CJO=144.93E-12 M=.15115
++ 			  VJ=.3905 ISR=984.01E-12 NR=4.5163 FC=0.5 TT=17.0000E-9 XTI=3 EG=1.11)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH10002TV1
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH10002TV1  anode1
+*				     | 	anode2
+*				     | 	|  cathode1
+*				     |  |  |  cathode2
+*				     | 	|  |  |
+.subckt STTH10002TV1 A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=30.483E-9 N=1.1981 RS=2.0506E-3 IKF=.68006 CJO=747.70E-12 M=.19751
++			 VJ=.39089 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=31.0000E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends 
+*$
+*******************************************************************
+* Model name       : STTH10002TV2
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH10002TV2  anode1
+*				     | 	anode2
+*				     | 	|  cathode1
+*				     |  |  |  cathode2
+*				     | 	|  |  |
+.subckt STTH10002TV2 A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=30.483E-9 N=1.1981 RS=2.0506E-3 IKF=.68006 CJO=747.70E-12 M=.19751
++			 VJ=.39089 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=31.0000E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH20002TV
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH20002TV   anode1
+*				     | 	anode2
+*				     | 	|  cathode1
+*				     |  |  |  cathode2
+*				     | 	|  |  |
+.subckt STTH20002TV  A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=9.5084E-9 N=1.1637 RS=755.92E-6 IKF=.88903 CJO=1.9421E-9 M=.27797
++			 VJ=.3905 ISR=763.19E-12 NR=4.9950 FC=0.5 TT=185.100E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+
+
+*******************************************************************
+* FAST RECOVERY RECTIFIER DIODE 300V
+*******************************************************************
+*******************************************************************
+* Model name       : STTH803D
+* Description      : High frequency secondary rectifier
+* Package type     : TO220AC
+*******************************************************************
+.MODEL STTH803D D IS=1.0000E-9 N=1.2711 RS=9.5518E-3 IKF=14.611E-3
++ EG=1.11 XTI=3 CJO=142.80E-12 M=.30937 VJ=.2074 ISR=248.37E-12
++ FC=0.5 NR=4.9950 TT=17.190E-9
+*$
+*******************************************************************
+* Model name       : STTH803G
+* Description      : High frequency secondary rectifier
+* Package type     : D2PAK
+*******************************************************************
+.MODEL STTH803G D IS=1.0000E-9 N=1.2711 RS=9.5518E-3 IKF=14.611E-3
++ EG=1.11 XTI=3 CJO=142.80E-12 M=.30937 VJ=.2074 ISR=248.37E-12
++ FC=0.5 NR=4.9950 TT=17.190E-9
+*$
+*******************************************************************
+* Model name       : STTH8R03D
+* Description      : Power Schottky rectifier
+* Package type     : TO220AC
+*******************************************************************
+.MODEL STTH8R03D D IS=404.78E-9 N=1.8809 RS=54.209E-3 IKF=45.104E-3
++ EG=1.11 XTI=3 CJO=133.98E-12 M=.32851 VJ=1.0045 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=7.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH8R03G
+* Description      : Power Schottky rectifier
+* Package type     : D²PAK
+*******************************************************************
+*model STTH8R03G  anode
+*				  | cathode
+*				  | |
+.subckt STTH8R03G 3 4
+d1 3 4 dx
+.model dx	D(IS=404.78E-9 N=1.8809 RS=54.209E-3 IKF=45.104E-3
++			  EG=1.11 XTI=3 CJO=133.98E-12 M=.32851 VJ=1.0045
++			  ISR=10.010E-21 NR=4.9950 FC=0.5 TT=7.0000E-9)
+*	STMicroelectronics	case=D²PAK   Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH8R03G-TR
+* Description      : Power Schottky rectifier
+* Package type     : D²PAK  in tape&reel
+*******************************************************************
+*model STTH8R03G-TR  anode
+*					 | cathode
+*					 | |
+.subckt STTH8R03G-TR 3 4
+d1 3 4 dx
+.model dx	D(IS=404.78E-9 N=1.8809 RS=54.209E-3 IKF=45.104E-3
++			  EG=1.11 XTI=3 CJO=133.98E-12 M=.32851 VJ=1.0045
++			  ISR=10.010E-21 NR=4.9950 FC=0.5 TT=7.0000E-9)
+*	STMicroelectronics	case=D²PAK   Delivery= tape&reel
+.ends
+*$
+*******************************************************************
+* Model name       : STTH8V03DJF-TR
+* Description      : Turbo2 Ultrafast High Voltage Rectifier
+* Package type     : POWER FLAT 5*6
+*******************************************************************
+.MODEL STTH8V03DJF-TR D
++ IS=193.36E-9 N=1.7652 RS=13.635E-3 IKF=.1025 CJO=139.51E-12 M=.32131
++ VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=7.0000E-9 XTI=3 EG=1.11
+*$
+*******************************************************************
+* Model name       : STTH1003SB
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DPAK
+*******************************************************************
+.MODEL STTH1003SB D 
++ IS=586.93E-9 N=1.9573 RS=11.474E-3 IKF=.39992
++ EG=1.11 XTI=3 CJO=81.692E-12 M=.23788 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=12.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH1003SB-TR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D2PAK   in tape&reel
+*******************************************************************
+.MODEL STTH1003SB-TR D IS=586.93E-9 N=1.9573 RS=11.474E-3 IKF=.39992
++ EG=1.11 XTI=3 CJO=81.692E-12 M=.23788 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=12.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH1003SFP
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAB
+*******************************************************************
+.MODEL STTH1003SFP D IS=586.93E-9 N=1.9573 RS=11.474E-3 IKF=.39992
++ EG=1.11 XTI=3 CJO=81.692E-12 M=.23788 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=12.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH1003SG
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D2PAK
+*******************************************************************
+.MODEL STTH1003SG D IS=586.93E-9 N=1.9573 RS=11.474E-3 IKF=.39992
++ EG=1.11 XTI=3 CJO=81.692E-12 M=.23788 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=12.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH1003SG-TR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D2PAK  in tape&reel
+*******************************************************************
+.MODEL STTH1003SG-TR D IS=586.93E-9 N=1.9573 RS=11.474E-3 IKF=.39992
++ EG=1.11 XTI=3 CJO=81.692E-12 M=.23788 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=12.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH2003CT
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220AB
+*******************************************************************
+*model STTH2003CT   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH2003CT  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=53.590E-9 N=1.5646 RS=7.2977E-3 IKF=.18516 CJO=185.85E-12 M=.34469
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=17.100E-9)
+*	STMicroelectronics	case=TO-220AB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH2003CR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : I²PAK
+*******************************************************************
+*model STTH2003CR   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH2003CR  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=53.590E-9 N=1.5646 RS=7.2977E-3 IKF=.18516 CJO=185.85E-12 M=.34469
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=17.100E-9)
+*	STMicroelectronics	case=I²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH2003CG-TR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK  in tape&reel
+*******************************************************************
+*model STTH2003CG-TR   anode1
+*				       | cathode
+*				       | | anode2
+*				       | | |
+.subckt STTH2003CG-TR  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=53.590E-9 N=1.5646 RS=7.2977E-3 IKF=.18516 CJO=185.85E-12 M=.34469
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=17.100E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tape & Reel
+.ends
+*$
+*******************************************************************
+* Model name       : STTH2003CG
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK
+*******************************************************************
+*model STTH2003CG   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH2003CG  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=53.590E-9 N=1.5646 RS=7.2977E-3 IKF=.18516 CJO=185.85E-12 M=.34469
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=17.100E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH2003CF
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOWATT220AB
+*******************************************************************
+*model STTH2003CF   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH2003CF  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=53.590E-9 N=1.5646 RS=7.2977E-3 IKF=.18516 CJO=185.85E-12 M=.34469
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=17.100E-9)
+*	STMicroelectronics	case=ISOWATT220AB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH2003CFP
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-220FPAB
+*******************************************************************
+*model STTH2003CFP   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH2003CFP  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=53.590E-9 N=1.5646 RS=7.2977E-3 IKF=.18516 CJO=185.85E-12 M=.34469
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=17.100E-9)
+*	STMicroelectronics	case=TO-220FPAB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH20L03CG-TR
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : D²PAK  in tape&reel
+*******************************************************************
+*model STTH20L03CG-TR  anode1
+*				       | anode2
+*				       | | cathode
+*				       | | |
+.subckt STTH20L03CG-TR 1 3 4
+d1 1 4 dx
+d2 3 4 dx
+.model dx	D(IS=10.857E-9 N=1.4354 RS=5.1808E-3 IKF=.21547 CJO=174.41E-12 M=.34155
++			  VJ=.39089 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=23.0000E-9 XTI=3 EG=1.11)
+*	STMicroelectronics	case=D²PAK     Delivery = Tape&reel
+.ends
+*$
+*******************************************************************
+* Model name       : STTH3003CW
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-247
+*******************************************************************
+*model STTH3003CW   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH3003CW  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=455.47E-9 N=1.8464 RS=6.3168E-3 IKF=.52694 EG=1.11 XTI=3 CJO=214.49E-12
++			M=.18707 VJ=58.950E-3 ISR=30.542E-9 FC=0.5 NR=4.9950 TT=13.800E-9)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH30R03CW
+* Description      : High Frequency Secondary Rectifier
+* Package type     : TO-247
+*******************************************************************
+*model STTH30R03CW   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH30R03CW  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=9.1192E-6 N=2.6859 RS=13.772E-3 IKF=.21816 CJO=152.82E-12 M=.24816
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=11.100E-9)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH30R03CG
+* Description      : High Frequency Secondary Rectifier
+* Package type     : D²PAK
+*******************************************************************
+*model STTH30R03CG   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH30R03CG  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=9.1192E-6 N=2.6859 RS=13.772E-3 IKF=.21816 CJO=152.82E-12 M=.24816
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=11.100E-9)
+*	STMicroelectronics	case=D²PAK    Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH30R03CG-TR
+* Description      : High Frequency Secondary Rectifier
+* Package type     : D²PAK  in tape&reel
+*******************************************************************
+*model STTH30R03CG-TR   anode1
+*				     	| cathode
+*				     	| | anode2
+*				     	| | |
+.subckt STTH30R03CG-TR  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=9.1192E-6 N=2.6859 RS=13.772E-3 IKF=.21816 CJO=152.82E-12 M=.24816
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=11.100E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tape & Reel
+.ends
+*$
+*******************************************************************
+* Model name       : STTH30W03CW
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-247
+*******************************************************************
+*model STTH30W03CW   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH30W03CW  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=61.824E-9 N=1.6331 RS=6.4055E-3 IKF=.22605 CJO=127.51E-12 M=.30871
++			  VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=16.5000E-9 XTI=3 EG=1.11)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH40P03ST
+* Description      : Ultrafast Rectifier PDP Energy Recovery
+* Package type     : TO-220AB
+*******************************************************************
+.MODEL STTH40P03ST D IS=17.527E-6 N=2.4303 RS=6.0674E-3 IKF=.53439
++ EG=1.11 XTI=3 CJO=536.22E-12 M=.34766 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=26.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH40P03SW
+* Description      : Ultrafast Rectifier PDP Energy Recovery
+* Package type     : TO-247
+*******************************************************************
+.MODEL STTH40P03SW D IS=17.527E-6 N=2.4303 RS=6.0674E-3 IKF=.53439
++ EG=1.11 XTI=3 CJO=536.22E-12 M=.34766 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=26.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH40P03SFP
+* Description      : Ultrafast Rectifier PDP Energy Recovery
+* Package type     : TO-220FPAB
+*******************************************************************
+.MODEL STTH40P03SFP D IS=17.527E-6 N=2.4303 RS=6.0674E-3 IKF=.53439
++ EG=1.11 XTI=3 CJO=536.22E-12 M=.34766 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=26.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH50W03CW
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-247
+*******************************************************************
+*model STTH50W03CW   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH50W03CW  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=110.75E-9 N=1.8143 RS=5.6386E-3 IKF=.40161 CJO=124E-12 M=.25028
++ 			VJ=.3905 ISR=10.010E-21 NR=4.9950 TT=15E-9 XTI=3 EG=1.11 FC=0.5)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH60P03SW
+* Description      : Ultrafast Rectifier PDP Energy Recovery
+* Package type     : TO-247
+*******************************************************************
+.MODEL STTH60P03SW D IS=990.18E-9 N=1.7976 RS=5.0324E-3 IKF=.45713
++ EG=1.11 XTI=3 CJO=813.13E-12 M=.33552 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=18.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH6003CW
+* Description      : High Frequency Secondary Rectifier
+* Package type     : TO-247
+*******************************************************************
+*model STTH6003CW   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH6003CW  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=43.965E-9 N=1.3902 RS=5.3164E-3 IKF=.21863 CJO=344.29E-12 M=.25766
++			VJ=.3905 ISR=933.80E-9 NR=4.9950 FC=0.5 TT=26.100E-9)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH60SW03CW
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-247
+*******************************************************************
+*model STTH60SW03CW   anode1
+*				      | cathode
+*				      | | anode2
+*				      | | |
+.subckt STTH60SW03CW  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=110.75E-9 N=1.8143 RS=5.6386E-3 IKF=.40161 CJO=124E-12 M=.25028
++ 			VJ=.3905 ISR=10.010E-21 NR=4.9950 TT=15E-9	XTI=3 EG=1.11 FC=0.5)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH60W03CW
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-247
+*******************************************************************
+*model STTH60W03CW   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH60W03CW  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=13.826E-9 N=1.3619 RS=5.0808E-3 IKF=.1542 CJO=216.48E-12 M=.28226
++			  VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=13.50000E-9 XTI=3 EG=1.11)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH8003CY
+* Description      : High Frequency Secondary Rectifier
+* Package type     : Max247
+*******************************************************************
+*model STTH8003CY   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt STTH8003CY  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=17.326E-9 N=1.2750 RS=3.5182E-3 IKF=.21436 CJO=675.30E-12 M=.34328
++			VJ=.3905 ISR=2.3541E-9 NR=4.9950 FC=0.5 TT=28.100E-9)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH12003TV
+* Description      : High Frequency Secondary Rectifier
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH12003TV1  anode1
+*				     |  anode2
+*				     |  |  cathode1
+*				     |  |  |  cathode2
+*				     |  |  |  |
+.subckt STTH12003TV1 A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=9.9765E-9 N=1.2040 RS=1.8862E-3 IKF=.36048 CJO=965.87E-12 M=.31707
++			VJ=.3905 ISR=5.4074E-9 NR=4.9950 FC=0.5 TT=29.100E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH16003TV1
+* Description      : High Frequency Secondary Rectifier
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH16003TV1  anode1
+*				     |  anode2
+*				     |  |  cathode1
+*				     |  |  |  cathode2
+*				     |  |  |  |
+.subckt STTH16003TV1 A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=22.977E-9 N=1.1949 RS=1.6093E-3 IKF=.4423 CJO=1.0379E-9 M=.15839
++			  EG=1.11 XTI=3 VJ=.3905 ISR=10.756E-9 NR=4.9950 FC=0.5 TT=28.0000E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH20003TV1
+* Description      : High Frequency Secondary Rectifier
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH20003TV1  anode1
+*				     |  anode2
+*				     |  |  cathode1
+*				     |  |  |  cathode2
+*				     |  |  |  |
+.subckt STTH20003TV1 A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=44.539E-9 N=1.2749 RS=1.2127E-3 IKF=.85525 CJO=1.6265E-9 M=.28509
++			VJ=.3905 ISR=6.3922E-9 NR=4.9950 FC=0.5 TT=44.100E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH200W03TV1
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH200W03TV1   anode1
+*				       |  anode2
+*				       |  |  cathode1
+*				       |  |  |  cathode2
+*				       |  |  |  |
+.subckt STTH200W03TV1  A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=35.639E-9 N=1.2702 RS=2.9787E-3 IKF=.21276 CJO=882.05E-12 M=.2484
++			  VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=32.000E-9 XTI=3 EG=1.11)
+*	STMicroelectronics	case=ISOTOP     Delivery = Tube
+.ends
+*$
+
+
+*******************************************************************
+* FAST RECOVERY RECTIFIER DIODE 400V
+*******************************************************************
+*******************************************************************
+* Model name       : BYT01-400
+* Description      : Fast recovery rectifier diode
+* Package type     : DO-15 in ammopack
+*******************************************************************
+.MODEL BYT01-400 D IS=231.57E-9 N=2.3787 RS=28.554E-3 IKF=.1
++ EG=1.11 XTI=3 CJO=5.7997E-12 M=59.206E-3 VJ=.97638 ISR=213.74E-9
++ FC=0.5 NR=19.079 TT=10.100E-9
+*$
+*******************************************************************
+* Model name       : BYT01-400RL
+* Description      : Fast recovery rectifier diode
+* Package type     : DO-15 in tape & reel
+*******************************************************************
+.MODEL BYT01-400RL D IS=231.57E-9 N=2.3787 RS=28.554E-3 IKF=.1
++ EG=1.11 XTI=3 CJO=5.7997E-12 M=59.206E-3 VJ=.97638 ISR=213.74E-9
++ FC=0.5 NR=19.079 TT=10.100E-9
+*$
+*******************************************************************
+* Model name       : SMBYT01-400
+* Description      : Fast recovery rectifier diode
+* Package type     : SMB (SOD6)
+*******************************************************************
+.MODEL SMBYT01-400 D IS=342.69E-9 N=2.2885 RS=37.717E-3 IKF=6.8353E-3
++ EG=1.11 XTI=3 CJO=8.0499E-12 M=31.262E-3 VJ=.93912 ISR=20.038E-9
++ FC=0.5 NR=21.554 TT=8.9000E-9
+*$
+*******************************************************************
+* Model name       : STTH1R04Q
+* Description      : Fast recovery rectifier diode
+* Package type     : DO-15 in ammopack
+*******************************************************************
+.MODEL STTH1R04Q D IS=2.3884E-6 N=2.8770 RS=60.817E-3 IKF=68.799E-3
++ CJO=15.616E-12 M=.24247 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=5.000E-9
+*$
+*******************************************************************
+* Model name       : STTH1R04QRL
+* Description      : Fast recovery rectifier diode
+* Package type     : DO-15 in tape & reel
+*******************************************************************
+.MODEL STTH1R04QRL D IS=2.3884E-6 N=2.8770 RS=60.817E-3 IKF=68.799E-3
++ CJO=15.616E-12 M=.24247 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=5.000E-9
+*$
+*******************************************************************
+* Model name       : STTH1R04
+* Description      : High Voltage Ultrafast Rectifier
+* Package type     : DO-41 in ammopack
+*******************************************************************
+.MODEL STTH1R04 D  IS=2.3884E-6 N=2.8770 RS=60.817E-3 IKF=68.799E-3
++ CJO=15.616E-12 M=.24247 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=5.000E-9
+*$
+*******************************************************************
+* Model name       : STTH1R04RL
+* Description      : High Voltage Ultrafast Rectifier
+* Package type     : DO-41 in tape & reel
+*******************************************************************
+.MODEL STTH1R04RL D IS=2.3884E-6 N=2.8770 RS=60.817E-3 IKF=68.799E-3
++ CJO=15.616E-12 M=.24247 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=5.000E-9
+*$
+*******************************************************************
+* Model name       : STTH1R04A
+* Description      : High Voltage Ultrafast Rectifier
+* Package type     : SMA
+*******************************************************************
+.MODEL STTH1R04A D  IS=2.3884E-6 N=2.8770 RS=60.817E-3 IKF=68.799E-3
++ CJO=15.616E-12 M=.24247 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=5.000E-9
+*$
+*******************************************************************
+* Model name       : STTH1R04U
+* Description      : High Voltage Ultrafast Rectifier
+* Package type     : SMB
+*******************************************************************
+.MODEL STTH1R04U D  IS=2.3884E-6 N=2.8770 RS=60.817E-3 IKF=68.799E-3
++ CJO=15.616E-12 M=.24247 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=5.000E-9
+*$
+*******************************************************************
+* Model name       : BYT03-400
+* Description      : Fast recovery rectifier diode
+* Package type     : DO-201AD in ammopack
+*******************************************************************
+.MODEL BYT03-400 D IS=5.0000E-9 N=1.7279 RS=14.488E-3 IKF=.10465
++ EG=1.11 XTI=3 CJO=9.0771E-12 M=59.347E-3 VJ=2.6271 ISR=524.43E-9
++ FC=0.5 NR=47.652 TT=17.000E-9
+*$
+*******************************************************************
+* Model name       : BYT03-400RL
+* Description      : Fast recovery rectifier diode
+* Package type     : DO-201AD in tape & reel
+*******************************************************************
+.MODEL BYT03-400RL D IS=5.0000E-9 N=1.7279 RS=14.488E-3 IKF=.10465
++ EG=1.11 XTI=3 CJO=9.0771E-12 M=59.347E-3 VJ=2.6271 ISR=524.43E-9
++ FC=0.5 NR=47.652 TT=17.000E-9
+*$
+*******************************************************************
+* Model name       : STTH3R04Q
+* Description      : Fast recovery rectifier diode
+* Package type     : DO-15 in ammopack
+*******************************************************************
+.MODEL STTH3R04Q D IS=1.3998E-6 N=2.4797 RS=29.052E-3 IKF=91.895E-3
++ CJO=31.776E-12 M=.22102 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=0
+*$
+*******************************************************************
+* Model name       : STTH3R04QRL
+* Description      : Fast recovery rectifier diode
+* Package type     : DO-15 in tape & reel
+*******************************************************************
+.MODEL STTH3R04QRL D IS=1.3998E-6 N=2.4797 RS=29.052E-3 IKF=91.895E-3
++ CJO=31.776E-12 M=.22102 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=5.000E-9
+*$
+*******************************************************************
+* Model name       : STTH3R04U
+* Description      : Fast recovery rectifier diode
+* Package type     : SMB (SOD6)
+*******************************************************************
+.MODEL STTH3R04U D IS=1.3998E-6 N=2.4797 RS=29.052E-3 IKF=91.895E-3
++ CJO=31.776E-12 M=.22102 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=5.000E-9
+*$
+*******************************************************************
+* Model name       : STTH3R04
+* Description      : Fast recovery rectifier diode
+* Package type     : DO-201AD in ammopack
+*******************************************************************
+.MODEL STTH3R04 D IS=1.3998E-6 N=2.4797 RS=29.052E-3 IKF=91.895E-3
++ CJO=31.776E-12 M=.22102 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=5.000E-9
+*$
+*******************************************************************
+* Model name       : STTH3R04RL
+* Description      : Fast recovery rectifier diode
+* Package type     : DO-201AD in tape & reel
+*******************************************************************
+.MODEL STTH3R04RL D IS=1.3998E-6 N=2.4797 RS=29.052E-3 IKF=91.895E-3
++ CJO=31.776E-12 M=.22102 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=5.000E-9
+*$
+*******************************************************************
+* Model name       : STTH3R04S
+* Description      : Fast recovery rectifier diode
+* Package type     : SMC (SOD15)
+*******************************************************************
+.MODEL STTH3R04S D IS=1.3998E-6 N=2.4797 RS=29.052E-3 IKF=91.895E-3
++ CJO=31.776E-12 M=.22102 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=5.000E-9
+*$
+*******************************************************************
+* Model name       : STTH5L04DEE
+* Description      : Power Schottky rectifier
+* Package type     : POWERFLAT (3.3*3.3)
+*******************************************************************
+*model STTH5L04DEE  anode
+*				    | cathode
+*				    | |
+.subckt STTH5L04DEE 1 3
+d1 1 3 dx
+.model dx	D(IS=6.4277E-9 N=1.5074 RS=9.6169E-3 IKF=72.835E-3 CJO=68.544E-12 M=.33052
++			  VJ=.3905 ISR=144.87E-9 NR=2.7668 FC=0.5 TT=32.0000E-9 XTI=3 EG=1.11)
+*	STMicroelectronics	case=POWERFLAT   Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : BYT08P-400
+* Description      : Fast recovery rectifier diode
+* Package type     : TO220AC in Tube
+*******************************************************************
+.MODEL BYT08P-400 D IS=712.90E-9 N=2.1739 RS=6.7680E-3 IKF=.1
++ EG=1.11 XTI=3 CJO=29.998E-12 M=75.170E-3 VJ=1.1370 ISR=1.4817E-6
++ FC=0.5 NR=12.658 TT=30.500E-9
+*$
+*******************************************************************
+* Model name       : STTH8R04D
+* Description      : Power Schottky rectifier
+* Package type     : TO220AC
+*******************************************************************
+.MODEL STTH8R04D D IS=2.2363E-6 N=2.3583 RS=14.331E-3 IKF=.20595
++ CJO=107.66E-12 M=.26425 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=11.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH8R04FP
+* Description      : Power Schottky rectifier
+* Package type     : TO-220FPAC
+*******************************************************************
+.MODEL STTH8R04FP D IS=2.2363E-6 N=2.3583 RS=14.331E-3 IKF=.20595
++ CJO=107.66E-12 M=.26425 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=11.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH8R04G
+* Description      : Power Schottky rectifier
+* Package type     : D²PAK
+*******************************************************************
+*model STTH8R04G  anode
+*				  | cathode
+*				  | |
+.subckt STTH8R04G 3 4
+d1 3 4 dx
+.model dx	D(IS=2.2363E-6 N=2.3583 RS=14.331E-3 IKF=.20595 CJO=107.66E-12
++			M=.26425 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=11.0000E-9)
+*	STMicroelectronics	case=D²PAK   Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH8R04G-TR
+* Description      : Power Schottky rectifier
+* Package type     : D²PAK  in tape&reel
+*******************************************************************
+*model STTH8R04G-TR  anode
+*					 | cathode
+*					 | |
+.subckt STTH8R04G-TR 3 4
+d1 3 4 dx
+.model dx	D(IS=2.2363E-6 N=2.3583 RS=14.331E-3 IKF=.20595 CJO=107.66E-12
++			M=.26425 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=11.0000E-9)
+*	STMicroelectronics	case=D²PAK   Delivery= tape&reel
+.ends
+*$
+*******************************************************************
+* Model name       : STTH8R04DI
+* Description      : Turbo2 Ultrafast High Voltage Rectifier
+* Package type     : TO-220AC Insulated in Box
+*******************************************************************
+.MODEL STTH8R04DI D  IS=2.2363E-6 N=2.3583 RS=14.331E-3 IKF=.20595
++ CJO=107.66E-12 M=.26425 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=11.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH10R04D
+* Description      : Power Schottky rectifier
+* Package type     : TO220AC
+*******************************************************************
+.MODEL STTH10R04D D IS=9.9335E-6 N=2.9567 RS=13.386E-3 IKF=.28542
++ CJO=64.111E-12 M=.19009 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=36.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH10R04FP
+* Description      : Power Schottky rectifier
+* Package type     : TO-220FPAC
+*******************************************************************
+.MODEL STTH10R04FP D IS=9.9335E-6 N=2.9567 RS=13.386E-3 IKF=.28542
++ CJO=64.111E-12 M=.19009 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=36.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH10R04G
+* Description      : Power Schottky rectifier
+* Package type     : D²PAK
+*******************************************************************
+*model STTH10R04G  anode
+*				   | cathode
+*				   | |
+.subckt STTH10R04G 3 4
+d1 3 4 dx
+.model dx	D(IS=9.9335E-6 N=2.9567 RS=13.386E-3 IKF=.28542 CJO=64.111E-12
++			M=.19009 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=36.0000E-9)
+*	STMicroelectronics	case=D²PAK   Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH10R04G-TR
+* Description      : Power Schottky rectifier
+* Package type     : D²PAK  in tape&reel
+*******************************************************************
+*model STTH10R04G-TR  anode
+*					  | cathode
+*					  | |
+.subckt STTH10R04G-TR 3 4
+d1 3 4 dx
+.model dx	D(IS=9.9335E-6 N=2.9567 RS=13.386E-3 IKF=.28542 CJO=64.111E-12
++			M=.19009 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=36.0000E-9)
+*	STMicroelectronics	case=D²PAK   Delivery= tape&reel
+.ends
+*$
+*******************************************************************
+* Model name       : STTH10R04B
+* Description      : Power Schottky rectifier
+* Package type     : DPAK
+*******************************************************************
+*model STTH10R04B  anode
+*				   | cathode
+*				   | |
+.subckt STTH10R04B 3 4
+d1 3 4 dx
+.model dx	D(IS=9.9335E-6 N=2.9567 RS=13.386E-3 IKF=.28542 CJO=64.111E-12
++			M=.19009 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=36.0000E-9)
+*	STMicroelectronics	case=D²PAK   Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH10R04B-TR
+* Description      : Power Schottky rectifier
+* Package type     : DPAK    in tape&reel
+*******************************************************************
+*model STTH10R04B-TR  anode
+*					  | cathode
+*					  | |
+.subckt STTH10R04B-TR 3 4
+d1 3 4 dx
+.model dx	D(IS=9.9335E-6 N=2.9567 RS=13.386E-3 IKF=.28542 CJO=64.111E-12
++			M=.19009 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=36.0000E-9)
+*	STMicroelectronics	case=D²PAK   Delivery= tape&reel
+.ends
+*$
+*******************************************************************
+* Model name       : BYT16P-400
+* Description      : Fast recovery rectifier diode
+* Package type     : TO-220AB
+*******************************************************************
+*model BYT16P-400   anode1
+*				    | cathode
+*				    | | anode2
+*				    | | |
+.subckt BYT16P-400  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=4.2501E-6 N=2.6645 RS=6.1295E-3 IKF=1+ EG=1.11 XTI=3 CJO=30.996E-12
++			M=73.707E-3 VJ=2.0866 ISR=10.010E-21 FC=0.5 NR=65.463 TT=12.400E-9)
+*	STMicroelectronics	case=TO-220AB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH16R04CT
+* Description      : Fast recovery rectifier diode
+* Package type     : TO-220AB
+*******************************************************************
+*model STTH16R04CT   anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH16R04CT  1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=2.2363E-6 N=2.3583 RS=14.331E-3 IKF=.20595 CJO=107.66E-12
++			M=.26425 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=11.0000E-9)
+*	STMicroelectronics	case=TO-220AB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH16R04CFP
+* Description      : Fast recovery rectifier diode
+* Package type     : TO-220FPAB
+*******************************************************************
+*model STTH16R04CFP  anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH16R04CFP 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=2.2363E-6 N=2.3583 RS=14.331E-3 IKF=.20595 CJO=107.66E-12
++			M=.26425 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=11.0000E-9)
+*	STMicroelectronics	case=TO-220FPAB     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH16R04CG
+* Description      : Fast recovery rectifier diode
+* Package type     : D²PAK
+*******************************************************************
+*model STTH16R04CG   anode1
+*				     | anode2
+*				     | | cathode
+*				     | | |
+.subckt STTH16R04CG  1 3 4
+d1 1 4 dx
+d2 3 4 dx
+.model dx	D(IS=2.2363E-6 N=2.3583 RS=14.331E-3 IKF=.20595 CJO=107.66E-12
++			M=.26425 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=11.0000E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH16R04CG-TR
+* Description      : Fast recovery rectifier diode
+* Package type     : D²PAK   in tape&reel
+*******************************************************************
+*model STTH16R04CG-TR   anode1
+*				     	| anode2
+*				     	| | cathode
+*				     	| | |
+.subckt STTH16R04CG-TR  1 3 4
+d1 1 4 dx
+d2 3 4 dx
+.model dx	D(IS=2.2363E-6 N=2.3583 RS=14.331E-3 IKF=.20595 CJO=107.66E-12
++			M=.26425 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=11.0000E-9)
+*	STMicroelectronics	case=D²PAK     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH20R04D
+* Description      : High Efficiency Rectifier
+* Package type     : TO-220AC
+*******************************************************************
+.MODEL STTH20R04D D IS=15.000E-6 N=1.7055 RS=9.7234E-3 IKF=71.651E-3
++ EG=1.11 XTI=3 CJO=155.13E-12 M=.29492 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=15.000E-9
+*$
+*******************************************************************
+* Model name       : STTH20R04W
+* Description      : High Efficiency Rectifier
+* Package type     : TO-247
+*******************************************************************
+.MODEL STTH20R04W D IS=15.000E-6 N=1.7055 RS=9.7234E-3 IKF=71.651E-3
++ EG=1.11 XTI=3 CJO=155.13E-12 M=.29492 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=15.000E-9
+*$
+*******************************************************************
+* Model name       : STTH20R04FP
+* Description      : High Efficiency Rectifier
+* Package type     : TO-220FPAB
+*******************************************************************
+.MODEL STTH20R04FP D IS=15.000E-6 N=1.7055 RS=9.7234E-3 IKF=71.651E-3
++ EG=1.11 XTI=3 CJO=155.13E-12 M=.29492 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=15.000E-9
+*$
+*******************************************************************
+* Model name       : STTH20R04G
+* Description      : Power Schottky rectifier
+* Package type     : D²PAK
+*******************************************************************
+*model STTH20R04G  anode
+*				   | cathode
+*				   | |
+.subckt STTH20R04G 3 4
+d1 3 4 dx
+.model dx	D(IS=15.000E-6 N=1.7055 RS=9.7234E-3 IKF=71.651E-3 EG=1.11 XTI=3
++			CJO=155.13E-12 M=.29492 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5
++			TT=15.000E-9)
+*	STMicroelectronics	case=D²PAK   Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH20R04G-TR
+* Description      : Power Schottky rectifier
+* Package type     : D²PAK   in tape&reel
+*******************************************************************
+*model STTH20R04G-TR  anode
+*					  | cathode
+*					  | |
+.subckt STTH20R04G-TR 3 4
+d1 3 4 dx
+.model dx	D(IS=15.000E-6 N=1.7055 RS=9.7234E-3 IKF=71.651E-3 EG=1.11 XTI=3
++			CJO=155.13E-12 M=.29492 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5
++			TT=15.000E-9)
+*	STMicroelectronics	case=D²PAK   Delivery= tape&reel
+.ends
+*$
+*******************************************************************
+* Model name       : BYT30PI-400
+* Description      : Fast recovery rectifier diode
+* Package type     : DOP3I
+*******************************************************************
+.MODEL BYT30PI-400 D IS=566.67E-9 N=1.8254 RS=2.8118E-3 IKF=.25
++ EG=1.11 XTI=3 CJO=78.290E-12 M=74.168E-3 VJ=1.8255 ISR=3.4536E-6
++ FC=0.5 NR=7.6804 TT=24.500E-9
+*$
+*******************************************************************
+* Model name       : STTH30R04D
+* Description      : Power Schottky rectifier
+* Package type     : TO220AC
+*******************************************************************
+.MODEL STTH30R04D D IS=161.12E-9 N=1.5640 RS=3.9511E-3 IKF=.45208
++ CJO=433.16E-12 M=.35561 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=50.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH30R04PI
+* Description      : Power Schottky rectifier
+* Package type     : DOP3I
+*******************************************************************
+.MODEL STTH30R04PI D IS=161.12E-9 N=1.5640 RS=3.9511E-3 IKF=.45208
++ CJO=433.16E-12 M=.35561 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=50.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH30R04G
+* Description      : Low Drop Power Schottky Rectifier
+* Package type     : D²PAK
+*******************************************************************
+*model STTH30R04G    anode
+*		    		 | cathode
+*					 | |
+.subckt STTH30R04G   1 4
+d1 1 4 dx
+.model dx	D(IS=161.12E-9 N=1.5640 RS=3.9511E-3 IKF=.45208 CJO=433.16E-12
++			M=.35561 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=50.0000E-9)
+*	STMicroelectronics	case=D²PAK      Delivery = Tube
+.ends 
+*$
+*******************************************************************
+* Model name       : STTH30R04G-TR
+* Description      : Low Drop Power Schottky Rectifier
+* Package type     : D²PAK in Tape & Reel
+*******************************************************************
+*model STTH30R04G-TR  anode
+*		    		  | cathode
+*		    		  | |
+.subckt STTH30R04G-TR 1 4
+d1 1 4 dx
+.model dx	D(IS=161.12E-9 N=1.5640 RS=3.9511E-3 IKF=.45208 CJO=433.16E-12
++			M=.35561 VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=50.0000E-9)
+*	STMicroelectronics	case=D²PAK      Delivery = Tape&reel
+.ends
+*$
+*******************************************************************
+* Model name       : STTH30R04W
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-247
+*******************************************************************
+.MODEL STTH30R04W D  IS=161.12E-9 N=1.5640 RS=3.9511E-3 IKF=.45208
++ CJO=433.16E-12 M=.35561 VJ=.3905 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=50.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH60R04W
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-247
+*******************************************************************
+.MODEL STTH60R04W D  IS=206.59E-9 N=1.5279 RS=2.0034E-3 IKF=.54537
++ CJO=894.17E-12 M=.29261 VJ=.39089 ISR=10.010E-21
++ NR=4.9950 FC=0.5 TT=60.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH60L04W
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-247
+*******************************************************************
+.MODEL STTH60L04W D  IS=2.0896E-9 N=1.2554 RS=1.8729E-3 IKF=.38248
++ CJO=1.3487E-9 M=.3676 VJ=.3905 ISR=2.4450E-9 NR=4.9950 FC=0.5 TT=70.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH6004W
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : DO-247
+*******************************************************************
+.MODEL STTH6004W D  IS=2.0896E-9 N=1.2554 RS=1.8729E-3 IKF=.38248
++ CJO=1.3487E-9 M=.3676 VJ=.3905 ISR=2.4450E-9 NR=4.9950 FC=0.5 TT=70.0000E-9
+*$
+*******************************************************************
+* Model name       : STTH61R04TV1
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH61R04TV1  anode1
+*				     | 	anode2
+*				     | 	|  cathode1
+*				     |  |  |  cathode2
+*				     | 	|  |  |
+.subckt STTH61R04TV1 A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=161.12E-9 N=1.5640 RS=3.9511E-3 IKF=.45208 CJO=433.16E-12 M=.35561
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=50.0000E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH61R04TV2
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH61R04TV2  anode1
+*				     | 	anode2
+*				     | 	|  cathode1
+*				     |  |  |  cathode2
+*				     | 	|  |  |
+.subckt STTH61R04TV2 A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=161.12E-9 N=1.5640 RS=3.9511E-3 IKF=.45208 CJO=433.16E-12 M=.35561
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=50.0000E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends                       
+*$
+*******************************************************************
+* Model name       : STTH61W04SW 
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-247
+*******************************************************************
+*model STTH61W04SW   anode
+*				     | cathode
+*				     | | anode
+*					 | | |	 
+.subckt STTH61W04SW  1 2 3
+d1 13 2 dx
+r1 13 1 0.1E-3
+r2 13 3 0.1E-3
+.model dx	D(IS=5.3022E-9 N=1.2383 RS=2.9761E-3 IKF=.18543 CJO=536.71E-12 M=.29376
++			  VJ=.3905 ISR=295.39E-12 NR=4.9950 FC=0.5 TT=53.0000E-9 XTI=3 EG=1.11)
+*	STMicroelectronics	case=TO-247  	Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH100W04CW
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : TO-247
+*******************************************************************
+*model STTH100W04CW  anode1
+*				     | cathode
+*				     | | anode2
+*				     | | |
+.subckt STTH100W04CW 1 2 3
+d1 1 2 dx
+d2 3 2 dx
+.model dx	D(IS=21.916E-9 N=1.3607 RS=4.4395E-3 IKF=.20394 CJO=421.90E-12 M=.24214
++			  VJ=.3905 ISR=33.838E-9 NR=4.9950 TT=36.000E-9 FC=0.5 XTI=3 EG=1.11)
+*	STMicroelectronics	case=TO-247     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH12004TV1
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH12004TV1   anode1
+*				      |  anode2
+*				      |  |  cathode1
+*				      |  |  |  cathode2
+*				      |  |  |  |
+.subckt STTH12004TV1  A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=2.0896E-9 N=1.2554 RS=1.8729E-3 IKF=.38248 CJO=1.3487E-9 M=.3676
++			VJ=.3905 ISR=2.4450E-9 NR=4.9950 FC=0.5 TT=70.0000E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH120L04TV1
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH120L04TV1   anode1
+*				       |  anode2
+*				       |  |  cathode1
+*				       |  |  |  cathode2
+*				       |  |  |  |
+.subckt STTH120L04TV1  A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=2.0896E-9 N=1.2554 RS=1.8729E-3 IKF=.38248 CJO=1.3487E-9 M=.3676
++			VJ=.3905 ISR=2.4450E-9 NR=4.9950 FC=0.5 TT=70.0000E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH120R04TV1
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH120R04TV1   anode1
+*				       |  anode2
+*				       |  |  cathode1
+*				       |  |  |  cathode2
+*				       |  |  |  |
+.subckt STTH120R04TV1  A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=552.77E-9 N=1.6666 RS=3.2214E-3 IKF=.52763 CJO=792.56E-12 M=.26049
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=60.0000E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH120R04TV2
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH120R04TV2 	anode1
+*					 	|  anode2
+*				     	|  |  cathode1
+*				     	|  |  |  cathode2
+*						|  |  |  |
+.subckt STTH120R04TV2   A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=552.77E-9 N=1.6666 RS=3.2214E-3 IKF=.52763 CJO=792.56E-12 M=.26049
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=60.0000E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH20004TV1
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH20004TV1   anode1
+*				      |  anode2
+*				      |  |  cathode1
+*				      |  |  |  cathode2
+*				      |  |  |  |
+.subckt STTH20004TV1  A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D( IS=13.353E-9 N=1.2108 RS=1.4977E-3 IKF=.432 CJO=2.4170E-9 M=.43124
++			VJ=.3905 ISR=774.48E-12 NR=3.1937 FC=0.5 TT=75.0000E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH200L04TV1
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH200L04TV1   anode1
+*				       |  anode2
+*				       |  |  cathode1
+*				       |  |  |  cathode2
+*				       |  |  |  |
+.subckt STTH200L04TV1  A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D( IS=13.353E-9 N=1.2108 RS=1.4977E-3 IKF=.432 CJO=2.4170E-9 M=.43124
++			VJ=.3905 ISR=774.48E-12 NR=3.1937 FC=0.5 TT=75.0000E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH200R04TV1
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH200R04TV1   anode1
+*				       |  anode2
+*				       |  |  cathode1
+*				       |  |  |  cathode2
+*				       |  |  |  |
+.subckt STTH200R04TV1  A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=42.333E-9 N=1.3184 RS=1.6247E-3 IKF=.49758 CJO=2.0307E-9 M=.35767
++			VJ=.3905 ISR=10.010E-21 NR=4.9950 FC=0.5 TT=160.0000E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH200W04TV1
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH200W04TV1   anode1
+*				       |  anode2
+*				       |  |  cathode1
+*				       |  |  |  cathode2
+*				       |  |  |  |
+.subckt STTH200W04TV1  A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=15.501E-9 N=1.2705 RS=3.5407E-3 IKF=.22143 CJO=966.51E-12 M=.34575
++			  VJ=.3905 ISR=311.61E-12 NR=4.9950 FC=0.5 TT=57.0000E-9 XTI=3 EG=1.11)
+*	STMicroelectronics	case=ISOTOP     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : STTH240F04TV
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model STTH240F04TV   anode1
+*				    |  anode2
+*				    |  |  cathode1
+*				    |  |  |  cathode2
+*				    |  |  |  |
+.subckt STTH240F04TV  A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=41.481E-9 N=1.2787 RS=3.0661E-3 IKF=.35651 CJO=1.8774E-9 M=.33408
++ VJ=.3905 ISR=9.3664E-9 NR=4.9950 TT=31.0000E-9 XTI=3 EG=1.11 FC=0.5)
+*	STMicroelectronics	case=ISOTOP     Delivery = Tube
+.ends
+*$
+*******************************************************************
+* Model name       : BYT230PIV-400
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model BYT230PIV-400  anode1
+*				      |  anode2
+*				      |  |  cathode1
+*				      |  |  |  cathode2
+*				      |  |  |  |
+.subckt BYT230PIV-400 A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=566.67E-9 N=1.8254 RS=2.8118E-3 IKF=.25 EG=1.11 XTI=3 CJO=78.290E-12
++			M=74.168E-3 VJ=1.8255 ISR=3.4536E-6 FC=0.5 NR=7.6804 TT=24.500E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+-
+*******************************************************************
+* Model name       : BYT260PIV-400
+* Description      : High Efficiency Ultrafast Diode
+* Package type     : ISOTOP
+*******************************************************************
+*model BYT260PIV-400  anode1
+*				      |  anode2
+*				      |  |  cathode1
+*				      |  |  |  cathode2
+*				      |  |  |  |
+.subckt BYT260PIV-400 A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=29.700E-6 N=2.4595 RS=1.3859E-3 IKF=2.5000 EG=1.11 XTI=3 CJO=200.97E-12
++			M=90.309E-3 VJ=1.7979 ISR=578.65E-27 FC=0.5 NR=38.111 TT=23.500E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*$
+*******************************************************************
+* Model name       : BYT261PIV-400
+* Description      : Fast recovery rectifier diode
+* Package type     : ISOTOP
+*******************************************************************
+*model BYT261PIV-400  anode1
+*				      |  anode2
+*				      |  |  cathode1
+*				      |  |  |  cathode2
+*				      |  |  |  |
+.subckt BYT261PIV-400 A1 A2 K1 K2
+d1 A1 K1 dx
+d2 A2 K2 dx
+.model dx	D(IS=29.700E-6 N=2.4595 RS=1.3859E-3 IKF=2.5000+ EG=1.11 XTI=3 CJO=200.97E-12
++			M=90.309E-3 VJ=1.7979 ISR=578.65E-27 FC=0.5 NR=38.111 TT=23.500E-9)
+*	STMicroelectronics	case=ISOTOP         Delivery= Tube
+.ends
+*-------------------------------------
+*THANKS TO USE THE ST'S PRODUCTS
+*-------------------------------------
+* End of library.
+*$
