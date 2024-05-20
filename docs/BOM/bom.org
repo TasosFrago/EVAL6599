@@ -1,0 +1,44 @@
+#+title: Bill of Materials
+
+* Caps
+
+#+TBLNAME: CAPS
+| Item                  | Part       | Qnt | Description                              | Manuf.            |
+|-----------------------+------------+-----+------------------------------------------+-------------------|
+| C2                    | 470nF-X2   |   1 | 275VAC X2 Safety Cap MKP R46             | ARCOTRONICS       |
+| C3                    | 330nF-X2   |   1 | 275VAC X2 Safety Cap MKP R46             | ARCOTRONICS       |
+| C4                    | 680nF-X2   |   1 | 275VAC X2 Safety Cap MKP R46             | ARCOTRONICS       |
+| C5/6/7                | 470nF/630V |   3 | POLYPROPYLENE CAP HIGH RIPPLE MKP R71    | ARCOTRONICS-EPCOS |
+| C8                    | 330uF/450V |   1 | ALUMINUM ELCAP USC SERIES 85 DEG SNAP-IN | RUBYCON           |
+| C9                    | 2.2nF-Y1   |   1 | 400VAC Y1 Safety Ceramic Disc Cap        | MURATA            |
+| C10/11                | 2.2nF-Y1   |   2 | 250VAC Y1 Safety Ceramic Disc Cap        | MURATA            |
+| C12/14/23/27/32/54/56 | 100nF      |   7 | 50V 1206 SMD CERCAP general purpose      | BC COMPONENTS     |
+| C13                   | 10uF/50V   |   1 | ALUMINUM ELCAP USC SERIES 85 DEG         | RUBYCON           |
+| C15                   | 100pF      |   1 | 100V 1206 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C16/39                | 1uF        |   2 | 25V 1206 SMD CERCAP general purpose      | BC COMPONENTS     |
+| C17                   | 220pF      |   1 | 100V 0805 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C18                   | 330pF      |   1 | 100V 0805 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C19/22                | 10nF       |   2 | 100V 0805 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C20                   | 470nF      |   1 | 50V 1206 SMD CERCAP general purpose      | BC COMPONENTS     |
+| C21                   | 2.2nF      |   1 | 100V 1206 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C25                   | 22uF/250V  |   1 | ALUMINIUM ELCAP YXF SERIES 105 DEG       | RUBYCON           |
+| C26                   | 270pF      |   1 | 100V 0805 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C28                   | 47nF/630V  |   1 | POLYPROPYLENE CAP HIGH RIPPLE PHE450     | RIFA-EVOX         |
+| C29/30                | 100uF/250V |   2 | ALUMINIUM ELCAP YXF SERIES 105 DEG       | RUBYCON           |
+| C31/41/48/50/55       | 10uF/50V   |   5 | ALUMINIUM ELCAP GENERAL PURPOSE 85 DEG   | RUBYCON           |
+| C33                   | 4.7nF      |   1 | 100V 1206 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C34                   | 220pF/630V |   1 | POLYPROPYLENE CAP HIGH RIPPLE PFR        | RIFA-EVOX         |
+| C35                   | 47uF/100V  |   1 | ALUMINIUM ELCAP YXF SERIES 105 DEG       | RUBYCON           |
+| C37/38                | 220uF/100V |   2 | ALUMINIUM ELCAP YXF SERIES 105 DEG       | RUBYCON           |
+| C40                   | 10nF       |   1 | 100V 1206 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C44                   | 47nF       |   1 | 100V 1206 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C45/47                | 1000uF/10V |   2 | ALUMINIUM ELCAP YXF SERIES 105 DEG       | RUBYCON           |
+| C46/49                | 100uF/10V  |   2 | ALUMINIUM ELCAP YXF SERIES 105 DEG       | RUBYCON           |
+| C51                   | 100nF      |   1 | 100V 0805 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C52                   | 47nF       |   1 | 100V 0805 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C53                   | 2.2nF      |   1 | 100V 0805 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C57                   | 1nF        |   1 | 100V 0805 SMD CERCAP general purpose     | BC COMPONENTS     |
+| C58                   | 10nF       |   1 | 50V X7R STANDARD CERAMIC CAP             | BC COMPONENTS     |
+| C59                   | 47nF/250V  |   1 | POLCAP PHE426 SERIES                     | RIFA-EVOX         |
+| C60                   | 470nF      |   1 | 25V 1206 SMD CERCAP general purpose      | VISHAY            |
+| C61                   | 470nF      |   1 | 50V CERCAP X7R                           | BCOMPONENTS       |
