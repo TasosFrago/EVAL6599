@@ -6,8 +6,46 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
+		(at 15.24 114.3)
+		(size 93.98 27.94)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3a489391-526d-4cf8-9f6e-0d0160d52f11")
+		(property "Sheetname" "auxiliary_converter"
+			(at 15.24 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "auxiliary_converter.kicad_sch"
+			(at 15.24 142.8246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "EVAL6599"
+				(path "/ab3b6b9f-35a8-4587-9dd4-e6d1eecaa4cd"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 15.24 17.78)
-		(size 96.52 138.43)
+		(size 93.98 34.29)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -27,7 +65,7 @@
 			)
 		)
 		(property "Sheetfile" "pfc_pre-regulator.kicad_sch"
-			(at 15.24 156.7946 0)
+			(at 15.24 52.6546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39,6 +77,44 @@
 			(project "EVAL6599"
 				(path "/ab3b6b9f-35a8-4587-9dd4-e6d1eecaa4cd"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 15.24 67.31)
+		(size 93.98 29.21)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7986bc9f-085f-4ae4-b7a9-963fb4fbbc74")
+		(property "Sheetname" "resonant_converter"
+			(at 15.24 66.5984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "resonant_converter.kicad_sch"
+			(at 15.24 97.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "EVAL6599"
+				(path "/ab3b6b9f-35a8-4587-9dd4-e6d1eecaa4cd"
+					(page "3")
 				)
 			)
 		)

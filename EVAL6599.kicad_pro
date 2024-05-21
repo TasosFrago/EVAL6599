@@ -389,6 +389,14 @@
     [
       "5bc5b03a-4e45-430f-bfb9-95ce74345f66",
       "pfc_pre-regulator"
+    ],
+    [
+      "7986bc9f-085f-4ae4-b7a9-963fb4fbbc74",
+      "resonant_converter"
+    ],
+    [
+      "3a489391-526d-4cf8-9f6e-0d0160d52f11",
+      "auxiliary_converter"
     ]
   ],
   "text_variables": {}
