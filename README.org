@@ -1,0 +1,3 @@
+* EVAL6599
+
+Analysis, design and manufacturing of the [[https://www.digikey.gr/reference-designs/en/ac-dc-and-dc-dc-conversion/ac-dc-smps-multi-output/339][EVAL6599]] power supply design from STMicroelectronics, for a university assignment on Power Electronics.
